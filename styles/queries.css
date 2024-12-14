@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* devise breakpoints:
+1-telas menores: min-width:320px, max-width:768px
+2-tablets:min-width:769px, max-width:1024px
+3-desktops:min-width:1025px, max-width:1280px
+4-telas maiores: min-width:1281px
+*/
+
+@media screen and (min-width:768px){
+    header > div#caixa-pesquisa{
+        display: none;
+    }
+    main > div#redes-contatos{ 
+        display: block;
+    }
+}

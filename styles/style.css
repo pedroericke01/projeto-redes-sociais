@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-color:black;
+    background-image: url("../images/fundos/fundo-madeira.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    position: relative;
+}
+header{
+    height: 120px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.505);
+}
+header > h1{
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+header > div#caixa-pesquisa{
+    margin-top: 10px;
+    height: 50px;
+    padding:0px 10px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+header > div#caixa-pesquisa > span.material-symbols-outlined{
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+    
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+header > div#caixa-pesquisa > span.material-symbols-outlined:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.856);
+}
+header > div#caixa-pesquisa > nav > a{
+    text-decoration: none;
+    color: white;
+}
+header > div#caixa-pesquisa > nav > a > img{
+    width: 42px;
+    height: 42px;
+    border-radius: 30px;
+    margin-right: 3px;
+    
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;    
+}
+header > div#caixa-pesquisa > nav > a > img:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.856);
+}
+main > div#redes-contatos{
+    width: 50px;
+    padding: 10px;
+    
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    
+    display: none;
+}
+main > div#redes-contatos > a{
+    margin-bottom: 25px;
+
+    text-align: right;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+    
+    color: white;
+
+}
+main > div#redes-contatos > a > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    
+    box-shadow: 1px 1px 1px black;
+}
+main > div#redes-contatos > a > img:hover{
+    position: relative;
+    left: -8px;
+    transform: translateX(-8px);
+}
+main > section#smartphone{
+    margin-top: 120px;
+    width: 311px;
+    height: 627px;
+
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/fundos/frame-iphone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+main > section#smartphone > iframe{
+    width:268px;
+    height: 471px;
+
+    position: absolute;
+    top: 12.7%;
+    left: 7.0%;
+    transform: translate(-12.7% -6.9%);
+    
+    background-color: black;
+    background-image: url("../images/fundos/tela-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
