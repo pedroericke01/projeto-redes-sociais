@@ -82,8 +82,8 @@ main > div#redes-contatos{
     padding: 10px;
     
     position: absolute;
-    left: 100%;
-    transform: translateX(-100%);
+    left: 98%;
+    transform: translateX(-98%);
     
     display: none;
 }
@@ -105,15 +105,20 @@ main > div#redes-contatos > a > img{
 
     transition-property: all;
     transition-duration: .5s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
     
     box-shadow: 1px 1px 1px black;
 }
 main > div#redes-contatos > a > img:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.856);    
+    
     position: relative;
     left: -8px;
     transform: translateX(-8px);
 }
+
 main > section#smartphone{
     margin-top: 120px;
     width: 311px;
@@ -131,17 +136,12 @@ main > section#smartphone{
     
 }
 main > section#smartphone > iframe{
-    width:268px;
-    height: 471px;
+    width:267px;
+    height: 472px;
 
     position: absolute;
-    top: 12.7%;
-    left: 7.0%;
-    transform: translate(-12.7% -6.9%);
-    
+    top: 80px;
+    left: 22px;
+   
     background-color: black;
-    background-image: url("../images/fundos/tela-home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
