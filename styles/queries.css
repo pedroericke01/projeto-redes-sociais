@@ -8,6 +8,9 @@
 */
 
 @media screen and (min-width:768px){
+    main > section#smartphone{
+        transform: translate(-50%, -70%);
+    }
     header > div#caixa-pesquisa{
         display: none;
     }
